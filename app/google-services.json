@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031481223578",
+    "project_id": "evchargingapp-3eeb4",
+    "storage_bucket": "evchargingapp-3eeb4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031481223578:android:1de48b5bb9c5729fcff223",
+        "android_client_info": {
+          "package_name": "com.example.evchargingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0Lc58wSVrFhaxDktowERTIAxLECmmXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

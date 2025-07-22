@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvStationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İstasyon Adı"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStationPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fiyat: 0₺/kWh"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvStationStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Durum: Müsait"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rezervasyon Yap"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
