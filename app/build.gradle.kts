@@ -49,7 +49,7 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
-    // ama bazen doğrudan eklemek sorunu çözer:
+
     implementation("com.google.code.gson:gson:2.8.9")
 
     // Retrofit çekirdeği
