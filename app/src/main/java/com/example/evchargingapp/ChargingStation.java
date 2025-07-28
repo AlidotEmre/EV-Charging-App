@@ -9,6 +9,7 @@ public class ChargingStation {
     private double pricePerKwh;
     private String pricingType;
 
+
     public ChargingStation(String id, String name, double latitude, double longitude,
                            boolean isAvailable, double pricePerKwh, String pricingType) {
         this.id = id;

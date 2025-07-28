@@ -1,66 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <!-- 1) Bilgilendirme notu -->
+    <TextView
+        android:id="@+id/tvSlotInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:text="Rezervasyon Saatlerimiz (15 dk’lık periyotlar halinde, birden fazla seçebilirsiniz)"
+        android:textSize="14sp"
+        android:paddingBottom="8dp"/>
 
-        <!-- Başlangıç -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Başlangıç Tarihi ve Saati"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp"/>
+    <!-- 2) Yatay gün seçimi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="1"
+        android:overScrollMode="never"
+        android:paddingBottom="8dp"
+        />
 
-        <!-- Tarih seçimi için inline DatePicker -->
-        <DatePicker
-            android:id="@+id/startDatePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:calendarViewShown="true"
-            android:datePickerMode="spinner"/>
+    <!-- 3) Zaman dilimleri listesi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTimeSlots"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
 
-        <!-- Saat seçimi için inline TimePicker -->
-        <TimePicker
-            android:id="@+id/startTimePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:timePickerMode="spinner"
-            />
-
-        <!-- Bitiş -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bitiş Tarihi ve Saati"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp"/>
-
-        <DatePicker
-            android:id="@+id/endDatePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:calendarViewShown="true"
-            android:datePickerMode="spinner"/>
-
-        <TimePicker
-            android:id="@+id/endTimePicker"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:timePickerMode="spinner"
-           />
-
-        <!-- Rezervasyonu Onayla -->
-        <Button
-            android:id="@+id/btnConfirmReservation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rezervasyonu Onayla" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

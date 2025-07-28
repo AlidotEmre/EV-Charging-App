@@ -21,7 +21,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDktEB4b6y8gKtM2rapS5H9sXqSHq6qp5w" />
+            android:value="API KEY HERE cannot commit due to security reasons" />
 
         <activity
             android:name=".MapsActivity"
